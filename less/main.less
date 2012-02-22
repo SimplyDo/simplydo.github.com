@@ -7,3 +7,58 @@ body {
 h1 {
 	padding-top:60px;
 }
+
+.teaser-item {
+	height:400px;
+	text-align:center;
+	background-color:#EEE;
+	h2 {
+		font-size:3em;
+		color:#999;
+		padding-top:150px;
+		margin-bottom:20px;
+	}
+	p {
+		font-size:1.8em;
+	}
+	.rounded-corners(5px);
+}
+
+#edc-slide {
+	background-color:#FF0;
+}
+
+#faces-slide {
+	background-color:#0FF;
+}
+
+.carousel {
+	.box-shadow(0px, 2px, 2px, rgba(0,0,0,0.3));
+	.rounded-corners(5px);
+	border:1px solid #999;
+}
+
+
+.navbar-inner {
+	opacity:.9;
+}
+
+
+
+.carousel-control {
+	top: 190px;
+}
+
+// mixins
+
+.rounded-corners (@radius: 5px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+.box-shadow(@vOffset, @hOffset, @blur, @color) {
+-moz-box-shadow: @vOffset @hOffset @blur @color;
+-webkit-box-shadow: @vOffset @hOffset @blur @color;
+box-shadow: @vOffset @hOffset @blur @color;
+}

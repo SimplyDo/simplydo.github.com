@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>EDC</title>
+    <title>Simply Do</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -46,13 +45,13 @@
       		<div id="myCarousel" class="carousel">
       			<!-- Carousel items -->
     			  <div class="carousel-inner">
-    			    <div class="active item">
+    			    <div id="edc-slide" class="active item teaser-item">
                 <h2>Everyday Carry</h2>
-                <p>cooming soon</p>
+                <p>cooming soon!</p>
               </div>
-    			    <div class="item">
+    			    <div id="faces-slide" class="item teaser-item faces-slide">
                 <h2>Faces</h2>
-                <p>cooming soon</p>
+                <p>cooming soon!</p>
               </div>
     			  </div>
   			  <!-- Carousel nav -->
@@ -106,5 +105,30 @@
     <script src="bootstrap/js/bootstrap-carousel.js"></script>
     <script src="bootstrap/js/bootstrap-typeahead.js"></script>
 	
+    <script>
+    $(document).ready(function() {
+
+        // Click event for any anchor tag that's href starts with #
+        $('.navbar a[href^="#"]').click(function(event) {
+
+            // The id of the section we want to go to.
+            var id = $(this).attr("href");
+
+            // An offset to push the content down from the top.
+            var offset = 60;
+
+            // Our scroll target : the top position of the
+            // section that has the id referenced by our href.
+            var target = $(id).offset().top - offset;
+
+            // The magic...smooth scrollin' goodness.
+            $('html, body').animate({scrollTop:target}, 500);
+
+            //prevent the page from jumping down to our section.
+            event.preventDefault();
+        });
+    });
+    </script>
+    
   </body>
 </html>
