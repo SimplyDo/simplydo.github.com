@@ -1,5 +1,5 @@
 @import "../bootstrap/less/bootstrap";
-@import "http://fonts.googleapis.com/css?family=Cabin+Sketch|Reenie+Beanie|Rancho";
+@import "http://fonts.googleapis.com/css?family=Reenie+Beanie|Rancho";
 
 //
 font-family: 'PT Sans', sans-serif;
@@ -35,13 +35,13 @@ h1 {
 }
 
 .teaser-item {
-	height:400px;
+	height:300px;
 	text-align:center;
 	background-color:#EEE;
 	h2 {
 		font-size:3em;
 		color:#999;
-		padding-top:150px;
+		padding-top:110px;
 		margin-bottom:20px;
 	}
 	p {
@@ -72,7 +72,7 @@ h1 {
 		opacity:0.6;
 	}
 	a {
-		.text-shadow(0px, 1px, 2px, #000) !important;
+		.text-shadow(0px, 1px, 1px, rgba(0,0,0,0.8)) !important;
 	}
 	font-weight:bold;
 }
@@ -80,8 +80,31 @@ h1 {
 
 
 .carousel-control {
-	top: 190px;
+	top: 145px;
 }
+
+
+.speech-bubble {
+	background-color:#CCC;
+	border-color:#CCC;
+	padding:15px 25px;
+	position: relative;
+	font-size:1.2em;
+	.rounded-corners(3px);
+}
+
+.speech-bubble:after {
+   content: "";
+   position: absolute;
+   top: 100%;
+   left: 20px;
+   border-top: 10px solid black;
+   border-top-color: inherit;
+   border-left: 10px solid transparent;
+   border-right: 10px solid transparent;
+}
+
+
 
 // mixins
 

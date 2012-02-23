@@ -24,12 +24,14 @@
         <div class="container">
           <ul class="nav">
             <li class="active"><a href="#home"><i class="icon-home icon-white"></i> Simply Do</a></li>
-            <li><a href="#edc"><i class="icon-star icon-white"></i> EDC</a></li>
-            <li><a href="#about"><i class="icon-info-sign icon-white"></i> About</a>
+            <!-- >
+            <li><a href="#edc" rel="tooltip" title="First Product, comming soon!"><i class="icon-star icon-white"></i> EDC</a></li> 
+            -->
+            <li><a href="#about" rel="tooltip" title="Learn more about Simply Do ______ !"><i class="icon-info-sign icon-white"></i> About</a>
           </ul>
           <ul class="nav pull-right">
-            <li><a href="#"><i class="icon-leaf icon-white"></i> Blog</a></li>
-            <li><a href="#" rel="tooltip" title="Follwo Us!"><i class="icon-comment icon-white"></i> Twitter</a></li>
+            <li><a href="http://simplydothat.tumblr.com/" rel="tooltip" title="Visit the Simply Do Blog on Tumblr."><i class="icon-leaf icon-white"></i> Blog</a></li>
+            <li><a href="http://twitter.com/SimplyDoThat" rel="tooltip" title="Follow Simply Do on Twitter."><i class="icon-comment icon-white"></i> Twitter</a></li>
           </ul>
           
         </div>  
@@ -42,10 +44,11 @@
         <div class="span6 offset3">
         		<h1 id="home">Simply do _____ !</h1>
         </div>
-        <div class="logo span3">
-        		<p>More stuff..</p>
+        <div class="span3">
+        		<p></p>
         </div>
-        
+      </div>
+      <div class="row">
         <div class="span12">
       		<div id="myCarousel" class="carousel">
       			<!-- Carousel items -->
@@ -58,6 +61,11 @@
                 <h2>Three Faces</h2>
                 <p>cooming soon!</p>
               </div>
+    			    <div class="item teaser-item faces-slide">
+                <h2>?</h2>
+                <p>...</p>
+              </div>
+              
     			  </div>
   			  <!-- Carousel nav -->
   			  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
@@ -67,21 +75,14 @@
       </div>
 	    <div class="row">
 	      <div class="span4">
-          one
+          One
         </div>
 	      <div class="span4">
-          two
+          Two
         </div>
 	      <div class="span4">
-          Three
-        </div>
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      </div>
-      
-	    <div class="row">
-	      <div class="span12">
-          <h1 id="edc">EDC</h1>
-          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <p id="lasttweet" class="speech-bubble"></p>
+          <p><a href="http://twitter.com/SimplyDoThat" rel="tooltip" title="Follow Simply Do on Twitter.">@SimplyDoThat</a></p>
         </div>
       </div>
       
@@ -109,6 +110,7 @@
     <script src="bootstrap/js/bootstrap-collapse.js"></script>
     <script src="bootstrap/js/bootstrap-carousel.js"></script>
     <script src="bootstrap/js/bootstrap-typeahead.js"></script>
+    <script src="js/jquery.tweet.js"></script>
 	
     <script>
     $(document).ready(function() {
@@ -133,12 +135,34 @@
             event.preventDefault();
         });
         
-        $('a[rel=tooltip]').tooltip({
-          placement:'bottom'
-        });
-        
     });
     </script>
+    
+    <script type="text/javascript">
+      $('a[rel=tooltip]').tooltip({
+        placement:'bottom'
+      });
+      
+      $('#navbar').scrollspy({
+        offset:70
+      });
+      
+      /* 
+      
+      $('a[rel=popover]').popover({
+        placement:'bottom'
+      });
+      
+      */
+      
+    </script>
+    
+    
+    <script>
+      $.getJSON("http://twitter.com/statuses/user_timeline/simplydothat.json?callback=?", function(data) {
+           $("#lasttweet").html(data[0].text);
+      });
+    </script
     
   </body>
 </html>
