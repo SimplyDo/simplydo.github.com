@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="http://schema.org/Organization">
   <head>
     <meta charset="utf-8">
     <title>Simply Do</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    
+    <!-- Required for Google+ page -->
+    <link href="https://plus.google.com/116002940907569381775" rel="publisher" />
+    
+    <!-- Content for google+ button -->
+    <meta itemprop="name" content="Title of your content">
+    <meta itemprop="description" content="This would be a description of the content your users are sharing">
+    <meta itemprop="image" content="http://...">
+    
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -27,10 +35,11 @@
             <!-- >
             <li><a href="#edc" rel="tooltip" title="First Product, comming soon!"><i class="icon-star icon-white"></i> EDC</a></li> 
             -->
-            <li><a href="#about" rel="tooltip" title="Learn more about Simply Do ______ !"><i class="icon-info-sign icon-white"></i> About</a>
+            <li><a href="#about" rel="tooltip" title="Learn more about Simply Do ______ !"><i class="icon-info-sign icon-white"></i> About</a></li>
+            <li><a href="#contact" rel="tooltip" title="Get in touch."><i class="icon-envelope icon-white"></i> Contact</a></li>
           </ul>
           <ul class="nav pull-right">
-            <li><a href="http://simplydothat.tumblr.com/" rel="tooltip" title="Visit the Simply Do Blog on Tumblr."><i class="icon-leaf icon-white"></i> Blog</a></li>
+            <li><a href="http://blog.simplydo.com/" rel="tooltip" title="Visit the Simply Do Blog on Tumblr."><i class="icon-leaf icon-white"></i> Blog</a></li>
             <li><a href="http://twitter.com/SimplyDoThat" rel="tooltip" title="Follow Simply Do on Twitter."><i class="icon-comment icon-white"></i> Twitter</a></li>
           </ul>
           
@@ -75,13 +84,15 @@
       </div>
 	    <div class="row">
 	      <div class="span4">
-          One
+          <p><g:plusone annotation="inline" width="300"></g:plusone></p>
         </div>
 	      <div class="span4">
-          Two
+          <p>
+            <a href="https://plus.google.com/116002940907569381775?prsrc=3" style="text-decoration:none;"><img src="https://ssl.gstatic.com/images/icons/gplus-32.png" alt="" style="border:0;width:32px;height:32px;"/></a>
+          </p>
         </div>
 	      <div class="span4">
-          <p id="lasttweet" class="speech-bubble"></p>
+          <p id="lasttweet" class="speech-bubble">Loading last tweet ...</p>
           <p><a href="http://twitter.com/SimplyDoThat" rel="tooltip" title="Follow Simply Do on Twitter.">@SimplyDoThat</a></p>
         </div>
       </div>
@@ -91,7 +102,15 @@
           <h1 id="about">About</h1>
           <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </div>
-      </div>						
+      </div>
+      
+	    <div class="row">
+	      <div class="span12">
+          <h1 id="contact">Get in touch</h1>
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        </div>
+      </div>
+      						
     </div>
 
     <!-- Le javascript
@@ -110,10 +129,11 @@
     <script src="bootstrap/js/bootstrap-collapse.js"></script>
     <script src="bootstrap/js/bootstrap-carousel.js"></script>
     <script src="bootstrap/js/bootstrap-typeahead.js"></script>
-    <script src="js/jquery.tweet.js"></script>
 	
     <script>
-    $(document).ready(function() {
+    // smoth scrolling from the static navbar
+    
+      $(document).ready(function() {
 
         // Click event for any anchor tag that's href starts with #
         $('.navbar a[href^="#"]').click(function(event) {
@@ -135,10 +155,11 @@
             event.preventDefault();
         });
         
-    });
+      });
     </script>
     
     <script type="text/javascript">
+    // various twitter boot strap initializers
       $('a[rel=tooltip]').tooltip({
         placement:'bottom'
       });
@@ -158,11 +179,23 @@
     </script>
     
     
-    <script>
+    <script type="text/javascript">
+    // get the last tweet and render in page
       $.getJSON("http://twitter.com/statuses/user_timeline/simplydothat.json?callback=?", function(data) {
            $("#lasttweet").html(data[0].text);
       });
-    </script
+    </script>
+    
+    
+    
+    <script type="text/javascript">
+    // google plus button
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
     
   </body>
 </html>
