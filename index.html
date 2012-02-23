@@ -23,13 +23,13 @@
       <div class="navbar-inner">
         <div class="container">
           <ul class="nav">
-            <li class="active"><a href="#home">Simply Do</a></li>
-            <li><a href="#edc">EDC</a></li>
-            <li><a href="#about">About</a>
+            <li class="active"><a href="#home"><i class="icon-home icon-white"></i> Simply Do</a></li>
+            <li><a href="#edc"><i class="icon-star icon-white"></i> EDC</a></li>
+            <li><a href="#about"><i class="icon-info-sign icon-white"></i> About</a>
           </ul>
           <ul class="nav pull-right">
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Twitter</a></li>
+            <li><a href="#"><i class="icon-leaf icon-white"></i> Blog</a></li>
+            <li><a href="#" rel="tooltip" title="Follwo Us!"><i class="icon-comment icon-white"></i> Twitter</a></li>
           </ul>
           
         </div>  
@@ -38,10 +38,15 @@
     
 
     <div class="container">
-      <div class="row">
+      <div class="row brand">
+        <div class="span6 offset3">
+        		<h1 id="home">Simply do _____ !</h1>
+        </div>
+        <div class="logo span3">
+        		<p>More stuff..</p>
+        </div>
         
-        		
-        <div id="home" class="span12">
+        <div class="span12">
       		<div id="myCarousel" class="carousel">
       			<!-- Carousel items -->
     			  <div class="carousel-inner">
@@ -50,7 +55,7 @@
                 <p>cooming soon!</p>
               </div>
     			    <div id="faces-slide" class="item teaser-item faces-slide">
-                <h2>Faces</h2>
+                <h2>Three Faces</h2>
                 <p>cooming soon!</p>
               </div>
     			  </div>
@@ -73,16 +78,16 @@
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       </div>
       
-	    <div id="edc" class="row">
+	    <div class="row">
 	      <div class="span12">
-          <h1>EDC</h1>
+          <h1 id="edc">EDC</h1>
           <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </div>
       </div>
       
-	    <div id="about" class="row">
+	    <div class="row">
 	      <div class="span12">
-          <h1>About</h1>
+          <h1 id="about">About</h1>
           <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </div>
       </div>						
@@ -127,6 +132,11 @@
             //prevent the page from jumping down to our section.
             event.preventDefault();
         });
+        
+        $('a[rel=tooltip]').tooltip({
+          placement:'bottom'
+        });
+        
     });
     </script>
     

@@ -1,11 +1,37 @@
 @import "../bootstrap/less/bootstrap";
+@import "http://fonts.googleapis.com/css?family=Cabin+Sketch|Reenie+Beanie|Rancho";
+
+//
+font-family: 'PT Sans', sans-serif;
+font-family: 'Cabin Sketch', cursive;
+font-family: 'Reenie Beanie', cursive;
+font-family: 'Cantarell', sans-serif;
+font-family: 'Ruluko', sans-serif;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Rancho', cursive;
+//
 
 body {
-	padding-top:60px;
+	padding-top:50px;
 }
 
 h1 {
-	padding-top:60px;
+	font-family: 'Rancho', cursive;	
+	margin-top:50px;
+}
+
+.brand {
+	h1 {
+		font-family: 'Reenie Beanie', cursive;
+		font-size:4em;
+		padding:0;
+		text-align:center;
+		margin:30px 0 30px 0;
+	}
+	p {
+		font-size:1.1em;
+		color:#999;
+	}
 }
 
 .teaser-item {
@@ -38,9 +64,17 @@ h1 {
 	border:1px solid #999;
 }
 
-
-.navbar-inner {
-	opacity:.9;
+.navbar {
+	.navbar-inner {
+		opacity:.9;
+	}
+	i {
+		opacity:0.6;
+	}
+	a {
+		.text-shadow(0px, 1px, 2px, #000) !important;
+	}
+	font-weight:bold;
 }
 
 
@@ -58,7 +92,13 @@ h1 {
 }
 
 .box-shadow(@vOffset, @hOffset, @blur, @color) {
--moz-box-shadow: @vOffset @hOffset @blur @color;
--webkit-box-shadow: @vOffset @hOffset @blur @color;
-box-shadow: @vOffset @hOffset @blur @color;
+	-moz-box-shadow: @vOffset @hOffset @blur @color;
+	-webkit-box-shadow: @vOffset @hOffset @blur @color;
+	box-shadow: @vOffset @hOffset @blur @color;
+}
+
+.text-shadow(@vOffset, @hOffset, @blur, @color) {
+	-moz-text-shadow: @vOffset @hOffset @blur @color;
+	-webkit-text-shadow: @vOffset @hOffset @blur @color;
+	text-shadow: @vOffset @hOffset @blur @color;
 }
