@@ -13,11 +13,27 @@ font-family: 'Rancho', cursive;
 
 body {
 	padding-top:50px;
+	background: #FFF url('../img/water-colour-background.jpg') no-repeat scroll top left !important;
 }
 
-h1 {
-	font-family: 'Rancho', cursive;	
+.headline {
 	margin-top:50px;
+	margin-bottom:25px;
+	.rotate(-1deg);
+	h1 {
+		font-family: 'Rancho', cursive;	
+		margin-top:50px;
+		margin-bottom:15px;
+		margin-left:-20px;
+		background-color:#FF0;
+		padding:2px 15px;
+		display:inline;
+		.text-shadow(2px, 2px, 0px, rgba(255,255,255,0.9));
+	}
+}
+
+h2 {
+	font-size:1.2em;
 }
 
 .brand {
@@ -25,12 +41,8 @@ h1 {
 		font-family: 'Reenie Beanie', cursive;
 		font-size:4em;
 		padding:0;
-		text-align:center;
 		margin:30px 0 30px 0;
-	}
-	p {
-		font-size:1.1em;
-		color:#999;
+		text-align:center;
 	}
 }
 
@@ -39,29 +51,59 @@ h1 {
 	text-align:center;
 	background-color:#EEE;
 	h2 {
-		font-size:3em;
-		color:#999;
+		font-size:4em;
+		color:#FFF;
 		padding-top:160px;
 		margin-bottom:20px;
+		font-family: 'Rancho', cursive;
+		.text-shadow(0px, -1px, 0px, rgba(0,0,0,0.3));
 	}
 	p {
 		font-size:1.8em;
 	}
-	.rounded-corners(5px);
 }
 
 #edc-slide {
-	background-color:#FF0;
+	background-color:#FE0;
+}
+#faces-slide {
+	background-color:#9EF;
 }
 
-#faces-slide {
-	background-color:#0FF;
+
+
+.connect {
+	p {
+		color:#999;
+	}
+	ul {
+		font-size:1.1em;
+		border-bottom:1px solid #EEE;
+		li {
+			margin:0;
+			border-top:1px solid #EEE;
+		}
+		a {
+			display:block;
+			text-decoration:none;
+			padding:0.3em 0.5em;
+		}
+		a:hover {
+			background-color:#EEE;
+		}
+	}
 }
 
 .carousel {
-	.box-shadow(0px, 2px, 2px, rgba(0,0,0,0.3));
-	.rounded-corners(5px);
-	border:1px solid #999;
+	.box-shadow(0px, 6px, 7px, rgba(0,0,0,0.5));
+	border:1px solid #DDD;
+	background-color:#FFF;
+	padding:20px;
+	.rotate(-.5deg);
+	.carousel-control {
+		top: 195px;
+		margin:-5px;
+	}
 }
 
 .navbar {
@@ -77,34 +119,77 @@ h1 {
 	font-weight:bold;
 }
 
-
-
-.carousel-control {
-	top: 195px;
+.tweet {
+	
+	
 }
 
-
 .speech-bubble {
-	background-color:#CCC;
-	border-color:#CCC;
-	padding:15px 25px;
+	background-color:#aad5ee;
+	border-color:#aad5ee;
+	padding:10px 15px;
 	position: relative;
-	font-size:1.2em;
-	.rounded-corners(3px);
+	.rounded-corners(8px);
+}
+
+.tweet {
+	height:70px;
+	margin-right:-10px;
+	.rotate(0.8deg);
+	p {
+		font-size:1.1em;
+		height:70px;
+		overflow:hidden;
+		font-weight:bold;
+		line-height:1.3em;
+		color:#FFF;
+		.text-shadow(0px, -1px, 0px, rgba(0,0,0,0.3));
+	}
+}
+
+.tweet-author {
+	text-align:right;
+	margin-bottom:1em;
 }
 
 .speech-bubble:after {
    content: "";
    position: absolute;
    top: 100%;
-   left: 20px;
-   border-top: 10px solid black;
+   right: 40px;
+   border-top: 15px solid black;
    border-top-color: inherit;
-   border-left: 10px solid transparent;
-   border-right: 10px solid transparent;
+   border-left: 15px solid transparent;
+   border-right: 15px solid transparent;
+}
+
+.subtitle {
+	text-align:center;
+	margin-bottom:3em;
+}
+
+.large-copy {
+	p {
+		font-size:1.8em;
+		line-height:1.5em;
+		color:#666;
+	}
+	padding:0.5em 0 1em 0;
 }
 
 
+#footer {
+	background-color:#333;
+	padding:2em 0;
+	border-top:10px solid rgba(0,0,0,0.3);
+	color:#AAA;
+}
+
+#main-page {
+	background: transparent url('../img/water-colour-background-bottom.jpg') no-repeat scroll bottom right;
+	padding-bottom:100px;
+	border-bottom:2px solid #000;
+}
 
 // mixins
 
@@ -124,4 +209,13 @@ h1 {
 	-moz-text-shadow: @vOffset @hOffset @blur @color;
 	-webkit-text-shadow: @vOffset @hOffset @blur @color;
 	text-shadow: @vOffset @hOffset @blur @color;
+}
+
+
+.rotate(@angle) {
+	transform:rotate(@angle);
+	-ms-transform:rotate(@angle); /* IE 9 */
+	-moz-transform:rotate(@angle); /* Firefox */
+	-webkit-transform:rotate(@angle); /* Safari and Chrome */
+	-o-transform:rotate(@angle); /* Opera */
 }
