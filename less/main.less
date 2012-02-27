@@ -87,6 +87,7 @@ h2 {
 			display:block;
 			text-decoration:none;
 			padding:0.3em 0.5em;
+			font-weight:bold;
 		}
 		a:hover {
 			background-color:#EEE;
@@ -134,8 +135,7 @@ h2 {
 
 .tweet {
 	height:70px;
-	margin-right:-10px;
-	.rotate(0.8deg);
+	margin-right:-20px;
 	p {
 		font-size:1.1em;
 		height:70px;
@@ -150,13 +150,15 @@ h2 {
 .tweet-author {
 	text-align:right;
 	margin-bottom:1em;
+	font-weight:bold;
+	font-size:1.1em;
 }
 
 .speech-bubble:after {
    content: "";
    position: absolute;
    top: 100%;
-   right: 40px;
+   right: 50px;
    border-top: 15px solid black;
    border-top-color: inherit;
    border-left: 15px solid transparent;
@@ -166,17 +168,22 @@ h2 {
 .subtitle {
 	text-align:center;
 	margin-bottom:3em;
+	font-weight:bold;
 }
 
 .large-copy {
 	p {
 		font-size:1.8em;
 		line-height:1.5em;
-		color:#666;
+		color:#333;
 	}
 	padding:0.5em 0 1em 0;
+	span {
+		background-color:rgba(188,255,150,0.5);
+		padding:0.2em;
+		margin:0 -0.1em;
+	}
 }
-
 
 #footer {
 	background-color:#333;
