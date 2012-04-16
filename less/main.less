@@ -1,4 +1,5 @@
 @import "../bootstrap/less/bootstrap";
+@import "mixins";
 @import "http://fonts.googleapis.com/css?family=Reenie+Beanie|Rancho";
 
 //
@@ -37,6 +38,7 @@ h2 {
 }
 
 .brand {
+	.noSelection();
 	h1 {
 		font-family: 'Reenie Beanie', cursive;
 		font-size:4em;
@@ -108,16 +110,15 @@ h2 {
 }
 
 .navbar {
-	.navbar-inner {
-		opacity:.9;
-	}
-	i {
-		opacity:0.6;
-	}
-	a {
+	.noSelection();
+	.nav > li > a {
 		.text-shadow(0px, 1px, 1px, rgba(0,0,0,0.8)) !important;
+		font-weight:bold;
+		i {
+			opacity:0.6;
+		}
 	}
-	font-weight:bold;
+	
 }
 
 .tweet {
