@@ -193,32 +193,3 @@ h2 {
 	padding-bottom:100px;
 	border-bottom:2px solid #000;
 }
-
-// mixins
-
-.rounded-corners (@radius: 5px) {
-  border-radius: @radius;
-  -webkit-border-radius: @radius;
-  -moz-border-radius: @radius;
-}
-
-.box-shadow(@vOffset, @hOffset, @blur, @color) {
-	-moz-box-shadow: @vOffset @hOffset @blur @color;
-	-webkit-box-shadow: @vOffset @hOffset @blur @color;
-	box-shadow: @vOffset @hOffset @blur @color;
-}
-
-.text-shadow(@vOffset, @hOffset, @blur, @color) {
-	-moz-text-shadow: @vOffset @hOffset @blur @color;
-	-webkit-text-shadow: @vOffset @hOffset @blur @color;
-	text-shadow: @vOffset @hOffset @blur @color;
-}
-
-
-.rotate(@angle) {
-	transform:rotate(@angle);
-	-ms-transform:rotate(@angle); /* IE 9 */
-	-moz-transform:rotate(@angle); /* Firefox */
-	-webkit-transform:rotate(@angle); /* Safari and Chrome */
-	-o-transform:rotate(@angle); /* Opera */
-}
