@@ -1,6 +1,5 @@
 @import "../bootstrap/less/bootstrap";
 @import "mixins";
-@import "http://fonts.googleapis.com/css?family=Reenie+Beanie|Rancho";
 
 //
 font-family: 'PT Sans', sans-serif;
@@ -13,23 +12,21 @@ font-family: 'Rancho', cursive;
 //
 
 body {
-	padding-top:50px;
+	padding-top:40px;
 	background: #FFF url('../img/water-colour-background.jpg') no-repeat scroll top left !important;
 }
 
 .headline {
 	margin-top:50px;
-	margin-bottom:25px;
-	.rotate(-1deg);
+	margin-bottom:20px;
 	h1 {
-		font-family: 'Rancho', cursive;	
-		margin-top:50px;
-		margin-bottom:15px;
-		margin-left:-10px;
-		background-color:#FF0;
-		padding:2px 15px;
 		display:inline;
-		.text-shadow(2px, 2px, 0px, rgba(255,255,255,0.9));
+		font-size:2em;
+		padding:0px 0px 0px 15px;
+		margin-left:-20px;
+		font-weight:normal;
+		border-left:5px solid #FF0;
+		color:#999;
 	}
 }
 
@@ -37,40 +34,31 @@ h2 {
 	font-size:1.2em;
 }
 
-.brand {
-	.noSelection();
-	h1 {
-		font-family: 'Reenie Beanie', cursive;
-		font-size:4em;
-		padding:0;
-		margin:30px 0 30px 0;
-		text-align:center;
+#home {
+	padding-top:20px;
+	margin-bottom:20px;
+	color:#FFF;
+	.text-shadow(0px, 1px, 1px, rgba(0,0,0,0.4));
+	img {
 	}
+	.tagline {
+		font-size:1.6em;
+		line-height:40px;
+		
+		strong {
+			padding-bottom:5px;
+			border-bottom:2px solid #FF0;
+			
+		}
+		span {
+		}
+		text-align:right;
+	}	
 }
+	
 
-.teaser-item {
-	height:400px;
-	text-align:center;
-	background-color:#EEE;
-	h2 {
-		font-size:4em;
-		color:#FFF;
-		padding-top:160px;
-		margin-bottom:20px;
-		font-family: 'Rancho', cursive;
-		.text-shadow(0px, -1px, 0px, rgba(0,0,0,0.3));
-	}
-	p {
-		font-size:1.8em;
-	}
-}
 
-#edc-slide {
-	background-color:#FE0;
-}
-#faces-slide {
-	background-color:#9EF;
-}
+
 
 
 
@@ -96,13 +84,16 @@ h2 {
 }
 
 .carousel {
-	.box-shadow(0px, 6px, 7px, rgba(0,0,0,0.5));
-	border:1px solid #DDD;
+	.box-shadow(0px, 2px, 5px, rgba(0,0,0,0.5));
 	background-color:#FFF;
-	padding:20px;
+	margin-bottom:4em;
 	.carousel-control {
-		top: 195px;
-		margin:-5px;
+		top: 180px;
+		margin:15px;
+	}
+	.teaser-item {
+		height:400px;
+		margin:10px;
 	}
 }
 
@@ -115,7 +106,9 @@ h2 {
 			opacity:0.6;
 		}
 	}
-	
+	.logo {
+		height:40px;
+	}
 }
 
 .tweet {
@@ -129,6 +122,7 @@ h2 {
 	padding:10px 15px;
 	position: relative;
 	.rounded-corners(8px);
+	.gradient(#d4ebf9,#aad5ee);
 }
 
 .tweet {
@@ -138,10 +132,9 @@ h2 {
 		font-size:1.1em;
 		height:70px;
 		overflow:hidden;
-		font-weight:bold;
 		line-height:1.3em;
-		color:#FFF;
-		.text-shadow(0px, -1px, 0px, rgba(0,0,0,0.3));
+		color:#069;
+		//.text-shadow(0px, -1px, 0px, rgba(0,0,0,0.3));
 	}
 }
 
@@ -154,12 +147,6 @@ h2 {
    border-top-color: inherit;
    border-left: 15px solid transparent;
    border-right: 15px solid transparent;
-}
-
-.subtitle {
-	text-align:center;
-	margin-bottom:3em;
-	font-weight:bold;
 }
 
 .large-copy {
