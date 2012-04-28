@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+		<script src="js/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cordova-1.5.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/custom.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/default.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link type="text/css" rel="stylesheet" media="only screen and (max-device-width: 480px)" href="css/iphone.css" />
+    <link type="text/css" rel="stylesheet" media="only screen and (min-device-width: 768px) and (max-device-width: 1024px)" href="css/ipad.css" /> 
+    <link type="text/css" rel="stylesheet" media="only screen and (min-device-width: 1024px)" href="css/ipad.css" /> 
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="mazeContainer" class="canvasContainer">
+				<canvas id="maze" width="500" height="500"> </canvas>
+			</div>
+			
+			<div id="pathContainer" class="canvasContainer">
+				<canvas id="path" width="500" height="500"> </canvas>
+			</div>
+			<div id="visualNoise"> </div>
+			<div id="working">
+				<p>Generating a new maze.</p>
+			</div>
+			<div id="controls">
+					<!--
+          <a id="clear" onclick="penDrawing.clearDrawing();">Clear Path</a>
+					<a id="path" class="multiple" onclick="penDrawing.allowMultipleLines = false;">Singel Line!</a>
+					<a onclick="penDrawing.allowMultipleLines = true;">Multiple Lines</a>
+					-->
+					<a id="level1">level 1</a>
+					<a id="level2">level 2</a>
+					<a id="level3" class="current">level 3</a>
+					<a id="level4">level 4</a>
+					<a id="level5">level 5</a>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
