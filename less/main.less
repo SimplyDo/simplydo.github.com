@@ -1,16 +1,6 @@
 @import "../bootstrap/less/bootstrap";
 @import "mixins";
 
-//
-font-family: 'PT Sans', sans-serif;
-font-family: 'Cabin Sketch', cursive;
-font-family: 'Reenie Beanie', cursive;
-font-family: 'Cantarell', sans-serif;
-font-family: 'Ruluko', sans-serif;
-font-family: 'Yanone Kaffeesatz', sans-serif;
-font-family: 'Rancho', cursive;
-//
-
 body {
 	padding-top:40px;
 	background: #FFF url('../img/water-colour-background.jpg') no-repeat scroll top left !important;
@@ -18,15 +8,11 @@ body {
 
 .headline {
 	margin-top:50px;
-	margin-bottom:20px;
+	margin-bottom:10px;
 	h1 {
 		display:inline;
 		font-size:2em;
-		padding:0px 0px 0px 15px;
-		margin-left:-20px;
-		font-weight:normal;
-		border-left:5px solid #FF0;
-		color:#999;
+		color:#333;
 	}
 }
 
@@ -37,30 +23,22 @@ h2 {
 #home {
 	padding-top:20px;
 	margin-bottom:20px;
-	color:#FFF;
-	.text-shadow(0px, 1px, 1px, rgba(0,0,0,0.4));
+	color:#369;
+	.text-shadow(0px, 1px, 0px, rgba(255,255,255,0.9));
 	img {
 	}
 	.tagline {
 		font-size:1.6em;
-		line-height:40px;
+		line-height:50px;
 		
 		strong {
-			padding-bottom:5px;
-			border-bottom:2px solid #FF0;
-			
+
 		}
 		span {
 		}
-		text-align:right;
+		text-align:center;
 	}	
 }
-	
-
-
-
-
-
 
 .connect {
 	ul {
@@ -85,15 +63,16 @@ h2 {
 
 .carousel {
 	.box-shadow(0px, 2px, 5px, rgba(0,0,0,0.5));
-	background-color:#FFF;
-	margin-bottom:4em;
+	.rounded-corners (15px);
+	margin-bottom:3em;
 	.carousel-control {
-		top: 180px;
-		margin:15px;
+		top: 190px;
 	}
-	.teaser-item {
+	.item {
 		height:400px;
-		margin:10px;
+		img {
+			.rounded-corners (15px);
+		}
 	}
 }
 
@@ -109,11 +88,6 @@ h2 {
 	.logo {
 		height:40px;
 	}
-}
-
-.tweet {
-	
-	
 }
 
 .speech-bubble {

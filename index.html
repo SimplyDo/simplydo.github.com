@@ -4,17 +4,12 @@
     <meta charset="utf-8">
     <title>Simply Do - Playful and Creative Products</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Simply Do is about creating stuff everyday. Our desire is to always be playful and creative.">
+    <meta name="description" content="Simply Do is about creating stuff everyday. Playful Products for ourselves, friends, families and you.">
     <meta name="author" content="Alexander Kohlhofer">
     
     <!-- Required for Google+ page -->
     <link href="https://plus.google.com/116002940907569381775" rel="publisher" />
-    
-    <!-- Content for google+ button -->
-    <meta itemprop="name" content="Simply Do - Playful and Creative Products">
-    <meta itemprop="description" content="Simply Do is about creating stuff everyday. We create products for ourselves, our friends, and our families. Always playful. Always creative.">
-    <meta itemprop="image" content="http://simplydo.com/img/simplydo-logo.png">
-    
+  
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -44,7 +39,7 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-					<a class="pull-right logo" href="#home">
+					<a class="pull-right logo" rel="smooth" href="#home">
 					  <img src="img/sdlogo-inverse.png" width="40" height="40" />
 					</a>
           <ul class="nav">
@@ -54,18 +49,15 @@
 					        <b class="caret"></b>
 					    </a>
 					    <ul class="dropdown-menu">
-					      <li><a href="#mazeMe">Maze Me</a></li>
-								<li><a href="#yourCarry">Your Carry</a></li>
+					      <li><a href="#mazeMe" rel="smooth">Maze Me</a></li>
+								<li><a href="#yourCarry" rel="smooth">Your Carry</a></li>
 					    </ul>
 					  </li>
-            <li><a href="#about" rel="tooltip" title="Learn more about Simply Do">About</a></li>
-            <li><a href="#contact" rel="tooltip" title="Get in touch">Contact</a></li>
+            <li><a href="#about" rel="smooth" title="Learn more about Simply Do">About</a></li>
+            <li><a href="#contact" rel="smooth" title="Get in touch">Contact</a></li>
+            <li class="divider-vertical"></li>
 						<li><a href="http://blog.simplydo.com/" rel="tooltip" title="Visit the Simply Do Blog on Tumblr">Blog</a></li>
           </ul>
-          <ul class="nav pull-right">
-            
-          </ul>
-          
         </div>  
       </div>
     </div>
@@ -76,7 +68,7 @@
 	        <div  class="span3">
 							<img src="img/sdlogo.png" width="74" height="60" id="logo" />
 	        </div>
-			    <div class="span9 tagline">
+			    <div class="span6 tagline">
 							<span><strong>Simply Do</strong> apps. In the sky.</span>
 		      </div>
 				</div>
@@ -85,16 +77,12 @@
 	      		<div id="myCarousel" class="carousel">
 	      			<!-- Carousel items -->
 	    			  <div class="carousel-inner">
-	    			    <div id="edc-slide" class="active item teaser-item">
-	                <a href="#mazeMe"><img src="img/products/mazemebanner.jpg" width="740" height="400" alt="Mazemebanner" /></a>
+	    			    <div class="item">
+	                <a href="#mazeMe" rel="smooth"><img src="img/products/mazemebanner.jpg" width="940" height="400" alt="Maze Me Large" /></a>
 	              </div>
-								<div id="edc-slide" class="item teaser-item">
-	                <h2>Codename: Roger</h2>
-	                <p>coming soon!</p>
-	              </div>
-	    			    <div id="faces-slide" class="item teaser-item faces-slide">
-	                <h2>Codename: Theresa</h2>
-	                <p>coming soon!</p>
+								<div class="active item">
+	                <a href="#yourCarry" rel="smooth"><img src="img/products/yourcarrybanner.jpg" width="940" height="400" alt="Your Carry Large" /></a>
+	                <p></p>
 	              </div>
 	    			  </div>
 		  			  <!-- Carousel nav -->
@@ -112,10 +100,9 @@
 		        </div>
 						
 	          <div class="large-copy">
-	            <p>Simply Do is about creating stuff everyday. We <span>create products</span> for ourselves, our friends, and our families.</p>
-							<p>We do what we love to do rather than what we are supposed to do.</p>
-							<p>Our desire is to always be <span>playful and creative</span>.</p>
-							<p>And we delight in sharing this with you. Enjoy!</p>
+	            <p>Simply Do is about creating stuff everyday. Products for ourselves, our friends, our families and you.</p>
+							<p>Always <span>playful and creative</span>.</p>
+							<p>Enjoy!</p>
 	          </div>  
 	          <p>
 	           <div class="fb-like" data-href="http://www.facebook.com/pages/Simply-Do/" data-send="false" data-width="450" data-show-faces="false"></div>
@@ -146,14 +133,17 @@
 					
 					<div class="span3">
 						<p>
-							<img src="img/products/mazeme_icon.png" width="220" height="220" alt="Mazeme">
+							<img src="img/products/mazeme_icon.png" width="220" height="220" alt="Mazeme" />
 						</p>
 					</div>
 					
 	        <div class="span8">
 	          <div class="large-copy">
 							<p>Solve good old fashioned mazes with a trusted red marker.<br />Just like on paper. Simple. For iPad and iPhone.</p>
-							<p>Geek Bonus: It is all done in html5 and CSS3 which is pretty impressive. It also means you can <a href="product/mazeme/index.html">preview Maze Me</a> in any modern browser!</p>
+              <p><strong>Coming soon to the App Store.</strong></p>
+							<!-- 
+                <p>Geek Bonus: It is all done in html5 and CSS3 alone so you can <a href="product/mazeme/index.html">preview Maze Me</a> in any modern browser!</p>
+              -->
 							<p><span class="label label-success">iPhone</span> <span class="label label-success">iPad</span> <span class="label label-info">Toy</span> <span class="label label-info">mobile</span> <span class="label label-info">Application</span> <span class="label label-info">HTML 5</span> <span class="label label-info">CSS 3</span><p>
 						</div>
 					</div>
@@ -168,15 +158,17 @@
 					
 					<div class="span3">
 						<p>
-							<img src="http://placehold.it/220x250" />
+              <a href="http://yourcarry.com" title="Visit yourcarry.com now">
+							 <img src="img/products/yourcarry.jpg" width="220" height="220" alt="Your Carry" />
+              </a>
 						</p>
 					</div>
 			
 	        <div class="span9">
 	          <div class="large-copy">
-							<p>A community about Every Day Carry. EDC refers to a small collection of tools, equipment and supplies that are carried on a daily basis to assist in tackling situations ranging from the mundane to the disastrous.</p>
-							<p>The site allows you to create, discover and collect sets of EDC items and share them with others.</p>
-							<p><span class="label label-success">Web</span> <span class="label label-info">Community</span> <span class="label label-info">Social</span> <span class="label label-info">EDC</span></p>
+							<p>A community about Everyday Carry. Share and discuss your own EDC set and discover others.</p>
+              <p><a href="http://yourcarry.com" title="Visit yourcarry.com now">Join today.</a>
+							<p><span class="label label-success">Web</span> <span class="label label-info">Community</span> <span class="label label-info">social</span> <span class="label label-info">EDC</span></p>
 						</div>
 					</div>		
 				</div>
@@ -185,7 +177,7 @@
       
 		    <div class="row">
 		      <div class="span12 headline">
-	          <h1 id="contact" >Send us a message</h1>
+	          <h1 id="contact" >Get in touch.</h1>
 	        </div>
 		      <div class="span6">
 	          <script type="text/javascript">var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));</script>
@@ -214,13 +206,13 @@
 			<div class="container">
 			  <div class="row">
 					<div class="span6">
-						<p><a href="#home">Back to the top</a></p>
+            <p>© 2012 Simply Do, LLC. All Rights Reserved.</p>
+						<p><a href="#home" rel="smooth">Back to the top</a></p>
 					</div>
 					<div class="span6">
 						<ul class="unstyled">
 					  	<li>Background created with <a target="new"  href="http://photoshoptutorials.ws/photoshop-downloads/photoshop-brushes/watercolor-splatters-photoshop-brushes.html">Watercolor Splatters</a>.</li>
 							<li>Site bootstrapped with <a target="new" href="http://twitter.github.com/bootstrap/index.html">Twitter Bootstrap</a>.</li>
-							<li>Using several <a target="new" href="http://www.google.com/webfonts">Google Web Fonts</a>.</li>
 							<li>Forms courtesy of <a href="http://wufoo.com" target="new">Wufoo</a>.</li>
 						</ul>
 					</div>
@@ -236,10 +228,11 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery-1.7.1.min.js"></script>
 		<script src="bootstrap/js/bootstrap-dropdown.js"></script>
-		
-		<script src="bootstrap/js/bootstrap-carousel.js"></script>
 		<script src="bootstrap/js/bootstrap-transition.js"></script>
+		<script src="bootstrap/js/bootstrap-carousel.js"></script>
+		
 		<script src="bootstrap/js/bootstrap-tooltip.js"></script>
+
 		
 		<!--
 		<script src="bootstrap/js/bootstrap-scrollspy.js"></script>
@@ -248,7 +241,7 @@
     <script src="bootstrap/js/bootstrap-tab.js"></script>
     <script src="bootstrap/js/bootstrap-popover.js"></script>
     <script src="bootstrap/js/bootstrap-button.js"></script>
-    <script src="bootstrap/js/bootstrap-collapse.js"></script>
+    
     <script src="bootstrap/js/bootstrap-typeahead.js"></script>
 		-->
 	
@@ -258,7 +251,7 @@
       $(document).ready(function() {
 
         // Click event for any anchor tag that's href starts with #
-        $('.navbar a[href^="#"]').click(function(event) {
+        $('a[rel="smooth"]').click(function(event) {
 
             // The id of the section we want to go to.
             var id = $(this).attr("href");
@@ -299,26 +292,6 @@
            $("#lasttweet").html(data[0].text);
       });
     </script>
-    
-    
-    
-    <script type="text/javascript">
-    // google plus button
-      (function() {
-        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-        po.src = 'https://apis.google.com/js/plusone.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-      })();
-    </script>
-    
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
     
   </body>
 </html>
