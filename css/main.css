@@ -723,6 +723,10 @@ h2{font-size:1.2em;}
 .connect ul a:hover{background-color:#EEE;}
 .carousel{-moz-box-shadow:0px 2px 5px rgba(0, 0, 0, 0.5);-webkit-box-shadow:0px 2px 5px rgba(0, 0, 0, 0.5);box-shadow:0px 2px 5px rgba(0, 0, 0, 0.5);border-radius:15px;-webkit-border-radius:15px;-moz-border-radius:15px;margin-bottom:3em;}.carousel .carousel-control{top:190px;}
 .carousel .item{height:400px;}.carousel .item img{border-radius:15px;-webkit-border-radius:15px;-moz-border-radius:15px;}
+.carousel .htmlSlide{display:block;width:940px;height:400px;background-color:#EEE;border-radius:15px;-webkit-border-radius:15px;-moz-border-radius:15px;text-decoration:none;text-align:center;}.carousel .htmlSlide h2{font-size:4em;color:#FFF;padding:160px 100px 10px 100px;-moz-text-shadow:0px -1px 0px rgba(0, 0, 0, 0.5);-webkit-text-shadow:0px -1px 0px rgba(0, 0, 0, 0.5);text-shadow:0px -1px 0px rgba(0, 0, 0, 0.5);}
+.carousel .htmlSlide p{font-size:1.5em;margin:10px 100px 10px 100px;color:#F9F2E7;-moz-text-shadow:0px -1px 0px rgba(0, 0, 0, 0.5);-webkit-text-shadow:0px -1px 0px rgba(0, 0, 0, 0.5);text-shadow:0px -1px 0px rgba(0, 0, 0, 0.5);}
+.carousel .htmlSlide.crypto{background-color:#8ABBCE;}
+.carousel .htmlSlide.balance{background-color:#8FBE00;}
 .navbar{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}.navbar .nav>li>a{-moz-text-shadow:0px 1px 1px rgba(0, 0, 0, 0.8) !important;-webkit-text-shadow:0px 1px 1px rgba(0, 0, 0, 0.8) !important;text-shadow:0px 1px 1px rgba(0, 0, 0, 0.8) !important;font-weight:bold;}.navbar .nav>li>a i{opacity:0.6;}
 .navbar .logo{height:40px;}
 .speech-bubble{background-color:#aad5ee;border-color:#aad5ee;padding:10px 15px;position:relative;border-radius:8px;-webkit-border-radius:8px;-moz-border-radius:8px;background-image:linear-gradient(bottom, #aad5ee 0%, #d4ebf9 100%);background-image:-o-linear-gradient(bottom, #aad5ee 0%, #d4ebf9 100%);background-image:-moz-linear-gradient(bottom, #aad5ee 0%, #d4ebf9 100%);background-image:-webkit-linear-gradient(bottom, #aad5ee 0%, #d4ebf9 100%);background-image:-ms-linear-gradient(bottom, #aad5ee 0%, #d4ebf9 100%);}
