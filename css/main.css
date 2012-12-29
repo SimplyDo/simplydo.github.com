@@ -714,11 +714,11 @@ a.label:hover,a.badge:hover{color:#ffffff;text-decoration:none;cursor:pointer;}
 .show{display:block;}
 .invisible{visibility:hidden;}
 body{padding-top:40px;background:#ffffff url('../img/water-colour-background.jpg') no-repeat scroll top left !important;}
-.headline{margin-top:50px;margin-bottom:10px;}.headline h1{display:inline;font-size:2em;color:#333;}
+.headline{margin-top:30px;margin-bottom:10px;}.headline h1{font-size:2em;color:#333;}
 h2{font-size:1.2em;}
 #home{padding-top:20px;margin-bottom:20px;color:#369;-moz-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);-webkit-text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);text-shadow:0px 1px 0px rgba(255, 255, 255, 0.9);}
 #home .tagline{font-size:1.6em;line-height:50px;text-align:center;}
-.connect ul{font-size:1.1em;border-bottom:1px solid #EEE;margin-top:25px;}.connect ul li{margin:0;border-top:1px solid #EEE;}
+.connect ul{font-size:1.1em;border-bottom:1px solid #EEE;margin-top:0px;}.connect ul li{margin:0;border-top:1px solid #EEE;}
 .connect ul a{display:block;text-decoration:none;padding:0.3em 0.5em;font-weight:bold;}
 .connect ul a:hover{background-color:#EEE;}
 .carousel{-moz-box-shadow:0px 2px 5px rgba(0, 0, 0, 0.5);-webkit-box-shadow:0px 2px 5px rgba(0, 0, 0, 0.5);box-shadow:0px 2px 5px rgba(0, 0, 0, 0.5);border-radius:15px;-webkit-border-radius:15px;-moz-border-radius:15px;margin-bottom:3em;}.carousel .carousel-control{top:190px;}
@@ -730,9 +730,6 @@ h2{font-size:1.2em;}
 .carousel .htmlSlide.currencies{background-color:#BB2970;}
 .navbar{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}.navbar .nav>li>a{-moz-text-shadow:0px 1px 1px rgba(0, 0, 0, 0.8) !important;-webkit-text-shadow:0px 1px 1px rgba(0, 0, 0, 0.8) !important;text-shadow:0px 1px 1px rgba(0, 0, 0, 0.8) !important;font-weight:bold;}.navbar .nav>li>a i{opacity:0.6;}
 .navbar .logo{height:40px;}
-.speech-bubble{background-color:#aad5ee;border-color:#aad5ee;padding:10px 15px;position:relative;border-radius:8px;-webkit-border-radius:8px;-moz-border-radius:8px;background-image:linear-gradient(bottom, #aad5ee 0%, #d4ebf9 100%);background-image:-o-linear-gradient(bottom, #aad5ee 0%, #d4ebf9 100%);background-image:-moz-linear-gradient(bottom, #aad5ee 0%, #d4ebf9 100%);background-image:-webkit-linear-gradient(bottom, #aad5ee 0%, #d4ebf9 100%);background-image:-ms-linear-gradient(bottom, #aad5ee 0%, #d4ebf9 100%);}
-.tweet{height:70px;margin-bottom:15px;}.tweet p{font-size:1.1em;height:70px;overflow:hidden;line-height:1.3em;color:#069;}
-.speech-bubble:after{content:"";position:absolute;top:100%;left:55px;border-top:15px solid black;border-top-color:inherit;border-left:15px solid transparent;border-right:15px solid transparent;}
 .large-copy{padding:0 0 1em 0;}.large-copy p{font-size:1.8em;line-height:1.5em;color:#333;}
 #footer{background-color:#333;padding:2em 0;border-top:10px solid rgba(0, 0, 0, 0.3);color:#AAA;}
 #main-page{background:transparent url('../img/water-colour-background-bottom.jpg') no-repeat scroll bottom right;padding-bottom:100px;border-bottom:2px solid #000;}

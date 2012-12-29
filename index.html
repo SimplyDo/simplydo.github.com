@@ -114,10 +114,13 @@
 		    
 		    <div id="about" class="row">
 		      
-	        <div class="span9">
+	        <div class="span12">
 			      <div class="headline">
 		          <h1>About Simply Do</h1>
 		        </div>
+
+          </div>
+           <div class="span8">
 						
 	          <div class="large-copy">
 	            <p>Simply Do is about creating stuff everyday. Products for ourselves, our friends, our families and you.</p>
@@ -131,10 +134,7 @@
 	           <g:plusone annotation="inline" width="300"></g:plusone>
 	          </p>
 					</div>
-	        <div class="span3 connect">
-	          <div class="tweet speech-bubble">
-	            <p id="lasttweet" >Loading last tweet ...</p>
-	          </div>
+	        <div class="span3 offset1 connect">
 	          <ul class="unstyled">
 							<li><a href="http://twitter.com/SimplyDoThat"><i class="icon-comment"></i> @SimplyDoThat</a></li>
 	            <li><a href="http://blog.simplydo.com/"><i class="icon-leaf"></i> Tumblr Blog</a></li>
@@ -355,14 +355,6 @@
         placement:'bottom'
       });
       
-    </script>
-    
-    
-    <script type="text/javascript">
-    // get the last tweet and render in page
-      $.getJSON("http://twitter.com/statuses/user_timeline/simplydothat.json?callback=?", function(data) {
-           $("#lasttweet").html(data[0].text);
-      });
     </script>
     
   </body>
