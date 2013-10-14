@@ -1,431 +1,193 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="simplydoApp"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
-    <title>Simply Do - Playful and Creative Products</title>
-    
-    <meta name="description" content="Simply Do is about creating stuff everyday. Playful Products for ourselves, friends, families and you.">
-    <meta name="author" content="Alexander Kohlhofer">
-    
-    <!-- Required for Google+ page -->
-    <link href="https://plus.google.com/116002940907569381775" rel="publisher" />
-  
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Simply Do</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="styles/83b98656.main.css">
+</head>
+  <body ng-controller="MainCtrl">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Le styles -->
-    <link href="css/main.css" rel="stylesheet">
-		
-		<script type="text/javascript">
+    <!--[if lt IE 9]>
+      <script src="bower_components/es5-shim/es5-shim.js"></script>
+      <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
 
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-29523960-1']);
-		  _gaq.push(['_trackPageview']);
-
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-
-		</script>
-		
-  </head>
-
-  <body data-spy="scroll">
-
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-					<a class="pull-right logo" rel="smooth" href="#home">
-					  <img src="img/sdlogo-inverse.png" width="40" height="40" />
-					</a>
-          <ul class="nav">
-						<li class="dropdown">
-					    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-					        Products
-					        <b class="caret"></b>
-					    </a>
-					    <ul class="dropdown-menu">
-					      <li><a href="#faces" rel="smooth">One Million Faces</a></li>
-                <li><a href="#lifeStacks" rel="smooth">Life Stacks</a></li>
-                <!-- <li><a href="#mazeMe" rel="smooth">Maze Me</a></li> -->
-								<!-- <li><a href="#yourCarry" rel="smooth">Your Carry</a></li> -->
-                <li><a href="#balance" rel="smooth">Balance Projector</a></li>
-                <li><a href="#crypto" rel="smooth">Cryptography Project</a></li>
-                <li><a href="#currencies" rel="smooth">Currencies</a></li>
-					    </ul>
-					  </li>
-            <li><a href="#about" rel="smooth" title="Learn more about Simply Do">About</a></li>
-            <li><a href="#contact" rel="smooth" title="Get in touch">Contact</a></li>
-            <li class="divider-vertical"></li>
-						<li><a href="http://blog.simplydo.com/" rel="tooltip" title="Visit the Simply Do Blog on Tumblr">Blog</a></li>
-          </ul>
-        </div>  
+    <!-- Add your site or application content here -->
+    <div class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="navigation-element">Simply Do</div>
+          </div>
+          <div class="col-sm-8">
+            <div class="navigation">
+              <a href="mailto:questions@uservoice.com" class="navigation-element" data-uv-trigger=""><i class="icon-contact"></i> Contact</a>
+              <a href="http://twitter.com/simplydothat" class="navigation-element" target="new"><i class="icon-twitter"></i> Twitter <i class="icon-right"></i></a>
+              <a href="http://blog.simplydo.com" class="navigation-element" target="new"><i class="icon-blog"></i> Blog <i class="icon-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 logo-container">
+            <i class="icon-sd-logo"></i>
+          </div>
+        </div>
       </div>
     </div>
-    
-		<div id="main-page">
-	    <div class="container">
-				<div class="row" id="home">
-	        <div  class="span3">
-							<img src="img/sdlogo.png" width="74" height="60" id="logo" />
-	        </div>
-			    <div class="span6 tagline">
-							<span><strong>Simply Do</strong> apps. In the sky.</span>
-		      </div>
-				</div>
-				<div class="row">
-	        <div class="span12">
-	      		<div id="myCarousel" class="carousel slide">
-	      			<!-- Carousel items -->
-	    			  <div class="carousel-inner">
-                <!--
-	    			    <div class="item">
-	                <a href="#mazeMe" rel="smooth"><img src="img/products/mazemebanner.jpg" width="940" height="400" alt="Maze Me Large" /></a>
-	              </div>
-                -->
-                <div class="active item">
-                  <a href="#faces" rel="smooth"><img src="img/products/facesbanner.png" width="940" height="400" alt="A Million Faces" /></a>
-                </div>
-                <div class="item">
-                  <a href="#lifeStacks" rel="smooth"><img src="img/products/lifeStacksbanner.png" width="940" height="400" alt="Life Stacks" /></a>
-                </div>
-                <!--
-								<div class="item">
-	                <a href="#yourCarry" rel="smooth"><img src="img/products/yourcarrybanner.jpg" width="940" height="400" alt="Your Carry Large" /></a>
-	              </div>
-                -->
-                <div class="item">
-                  <a href="#crypto" rel="smooth" class="htmlSlide crypto">
-                    <h2>Cryptography Project</h2>
-                    <p>A Simply Do open source code doodle. Make cool keys and encrypt your stuff!</p>
-                  </a>
-                </div>
-                <div class="item">
-                  <a href="#balance" rel="smooth" class="htmlSlide balance">
-                    <h2>Balance Projector</h2>
-                    <p>A real time open source personal finance projector.</p>
-                  </a>
-                </div>
-                <div class="item">
-                  <a href="#currencies" rel="smooth" class="htmlSlide currencies">
-                    <h2>Currencies</h2>
-                    <p>Enter multiple balances in different currencies and convert them all at once.</p>
-                  </a>
-                </div>
-	    			  </div>
-		  			  <!-- Carousel nav -->
-		  			  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-		  			  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-	    			</div>
-	    		</div>	
-	      </div>
-		    
-		    <div id="about" class="row">
-		      
-	        <div class="span12">
-			      <div class="headline">
-		          <h1>About Simply Do</h1>
-		        </div>
-
+    <div class="content">
+      <div class="container">
+        <div class="row" ng-show="false">
+          <div class="col-xs-6 col-sm-4 col-sm-offset-8 col-md-3 col-md-offset-9">
+            <div class="input-group">
+              <input type="text" ng-model="searchBox" class="form-control" placeholder="Filter products..
+              .">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Go!</button>
+              </span>
+            </div>
           </div>
-           <div class="span8">
-						
-	          <div class="large-copy">
-	            <p>Simply Do is about creating stuff everyday. Products for myself, my friends, my family and you.</p>
-							<p>Always <span>playful and creative</span>.</p>
-							<p>Enjoy!</p>
-	          </div>  
-	          <p>
-	           <div class="fb-like" data-href="http://www.facebook.com/pages/Simply-Do/" data-send="false" data-width="450" data-show-faces="false"></div>
-	          </p>
-	          <p>
-	           <g:plusone annotation="inline" width="300"></g:plusone>
-	          </p>
-					</div>
-	        <div class="span3 offset1 connect">
-	          <ul class="unstyled">
-							<li><a href="http://twitter.com/SimplyDoThat"><i class="icon-comment"></i> @SimplyDoThat</a></li>
-	            <li><a href="http://blog.simplydo.com/"><i class="icon-leaf"></i> Tumblr Blog</a></li>
-	            <li><a href="http://www.facebook.com/pages/Simply-Do/364746746882534"><i class="icon-user"></i> Facebook</a></li>
-	            <li><a href="https://plus.google.com/b/116002940907569381775/116002940907569381775/posts"><i class="icon-plus-sign"></i> Google+</a></li>
-	          </ul>    
-	        </div>
-	      </div>
-
-
-        <div class="product row">
-          
-          
-          <div class="span12 headline">
-            <h1 id="faces" >One Million Faces</h1>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-sm-4 col-md-3" ng-repeat="product in products | filter:searchBox">
+            <a class="product-tile" href="{{product.url}}" target="new">
+              <i class="icon-{{product.id}} product-icon"></i>
+              <div class="product-label">{{product.label}}</div>
+            </a>
           </div>
-          
-          <div class="span3">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer-section">
+      <div class="container">
+        <div clas="row">
+          <div class="col-md-4 col-sm-4">
+            <p class="copy-right-notice">
+              &#169; 2012 - {{currentYear()}} Simply Do LLC.<br>All rights reserved.
+            </p>
             <p>
-              <a href="http://simplydo.com/faces"><img src="img/products/faces.png" width="220" height="220" alt="Mazeme" /></a>
+              Created by <a href="http://kohlhofer.com" target="new">Alexander Kohlhofer</a>
             </p>
           </div>
-          
-          <div class="span8">
-            <div class="large-copy">
-              <p>A simple exploration. You can download the faces to use at avatars or whatever else you see fit.</p>
-              <p><a href="http://simplydo.com/faces">Explore now</a>.</p>
-              <!-- 
-                <p>Geek Bonus: It is all done in html5 and CSS3 alone so you can <a href="product/mazeme/index.html">preview Maze Me</a> in any modern browser!</p>
-              -->
-              <p><span class="label label-info">Toy</span> <span class="label label-info">Application</span> <span class="label label-info">HTML 5</span> <span class="label label-info">Facebook</span></p>
+          <div class="col-sm-7 col-sm-offset-1 col-md-6 col-md-offset-2">
+            <p>Built with:</p>
+            <div class="row">
+              <div class="col-sm-4 col-xs-6 footer-kudos">
+                <a href="http://getbootstrap.com/" target="new" class="footer-kudos-link">
+                  Bootstrap 3
+                </a>
+                <span class="footer-kudos-link-tagline">Powerful mobile first front-end framework</span>
+              </div>
+              <div class="col-sm-4 col-xs-6 footer-kudos">
+                <a href="http://fontastic.me/" target="new" class="footer-kudos-link">
+                  Fontastic
+                </a>
+                <span class="footer-kudos-link-tagline">Join the Icon Fonts Revolution</span>
+              </div>
+              <div class="col-sm-4 col-xs-6 footer-kudos">
+                <a href="http://angularjs.org/" target="new" class="footer-kudos-link">
+                  AngularJS 1.2
+                </a>
+                <span class="footer-kudos-link-tagline">HTML enhanced for web apps</span>
+              </div>
+              <div class="col-sm-4 col-xs-6 footer-kudos">
+                <a href="http://yeoman.io/" target="new" class="footer-kudos-link">
+                  Yeoman
+                </a>
+                <span class="footer-kudos-link-tagline">Modern workflows for modern webapps</span>
+              </div>
+              <div class="col-sm-4 col-xs-6 footer-kudos">
+                <a href="http://github.com/" target="new" class="footer-kudos-link">
+                  Github
+                </a>
+                <span class="footer-kudos-link-tagline">Build software better, together</span>
+              </div>
             </div>
           </div>
-                
         </div>
+      </div>
+    </div>
 
 
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        <div class="product row">
-          
-          
-          <div class="span12 headline">
-            <h1 id="lifeStacks" >Life Stacks</h1>
-          </div>
-          
-          <div class="span3">
-            <p>
-              <a href="http://simplydo.com/lifeStacks"><img src="img/products/lifeStacks.png" width="220" height="220" alt="Mazeme" /></a>
-            </p>
-          </div>
-          
-          <div class="span8">
-            <div class="large-copy">
-              <p>Create and share Life Stacks.</p>
-              <p><a href="http://simplydo.com/lifeStacks">Explore now</a>.</p>
-              <!-- 
-                <p>Geek Bonus: It is all done in html5 and CSS3 alone so you can <a href="product/mazeme/index.html">preview Maze Me</a> in any modern browser!</p>
-              -->
-              <p><span class="label label-info">Toy</span> <span class="label label-info">Application</span> <span class="label label-info">HTML 5</span> <span</p>
-            </div>
-          </div>
-                
-        </div>
+       ga('create', 'UA-29523960-1');
+       ga('send', 'pageview');
+    </script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+
+    <script src="scripts/491c175a.plugins.js"></script>
+
+    <script src="scripts/ba83b5a2.modules.js"></script>
+
+    <script src="scripts/5f7c4f3a.scripts.js"></script>
 
 
-
-        <!--
-				
-				<div class="product row">
-					
-		      
-					<div class="span12 headline">
-	          <h1 id="mazeMe" >Maze Me</h1>
-	        </div>
-					
-					<div class="span3">
-						<p>
-							<img src="img/products/mazeme_icon.png" width="220" height="220" alt="Mazeme" />
-						</p>
-					</div>
-					
-	        <div class="span8">
-	          <div class="large-copy">
-							<p>Solve good old fashioned mazes with a trusted red marker.<br />Just like on paper. Simple. For iPad and iPhone.</p>
-              <p><strong>Coming soon to the App Store.</strong></p>
-
-							<p><span class="label label-success">iPhone</span> <span class="label label-success">iPad</span> <span class="label label-info">Toy</span> <span class="label label-info">mobile</span> <span class="label label-info">Application</span> <span class="label label-info">HTML 5</span> <span class="label label-info">CSS 3</span><p>
-						</div>
-					</div>
-								
-				</div>
-
-				
-				<div  class="product row">
-
-		      <div class="span12 headline">
-	          <h1 id="yourCarry">Your Carry</h1>
-	        </div>
-					
-					<div class="span3">
-						<p>
-              <a href="http://yourcarry.com" title="Visit yourcarry.com now">
-							 <img src="img/products/yourcarry.jpg" width="220" height="220" alt="Your Carry" />
-              </a>
-						</p>
-					</div>
-			
-	        <div class="span9">
-	          <div class="large-copy">
-							<p>A community about Everyday Carry. Share and discuss your own EDC set and discover others.</p>
-              <p><a href="http://yourcarry.com" title="Visit yourcarry.com now">Join today.</a></p>
-							<p><span class="label label-success">Web</span> <span class="label label-info">Community</span> <span class="label label-info">social</span> <span class="label label-info">EDC</span></p>
-						</div>
-					</div>		
-				</div>
-
-        -->
-
-        <div  class="product row">
-
-          <div class="span12 headline">
-            <h1 id="balance">Balance Projector</h1>
-          </div>
-      
-          <div class="span12">
-            <div class="large-copy">
-              <p><a href="http://simplydo.com/projector" target="new">Balance Projector</a> can provide quick insights into your immediate financial future. The real time interface updates on every change and makes somewhat abstract numbers very tangible. Build in a mere hours with learning in mind. The sources are open.</p>
-              <p><span class="label label-success">Web</span> <span class="label label-info">tool</span> <span class="label label-info">open source</span> <span class="label label-info">exploration</span> <span class="label label-info">HTML 5</span> <span class="label label-info">CSS 3</span> <span class="label label-info">finance</span></p>
-            </div>
-          </div>    
-        </div>
-
-
-
-        <div  class="product row">
-
-          <div class="span12 headline">
-            <h1 id="crypto">Cryptography Project</h1>
-          </div>
-      
-          <div class="span12">
-            <div class="large-copy">
-              <p>Encrypt and decrypt any text right in your browser. You can also generate random key phrases from the list of 39,000 English words. Nothing is ever sent to a server!</p>
-              <p>Build in a mere hours with learning in mind. The sources are open.</p>
-              <p>Open the <a href="http://simplydo.com/cryptography" target="new">Cryptography Project</a> now.</p>
-              <p><span class="label label-success">Web</span> <span class="label label-info">tool</span> <span class="label label-info">open source</span> <span class="label label-info">exploration</span> <span class="label label-info">HTML 5</span> <span class="label label-info">CSS 3</span> <span class="label label-info">cryptography</span></p>
-            </div>
-          </div>    
-        </div>
-
-
-
-
-
-        <div  class="product row">
-
-          <div class="span12 headline">
-            <h1 id="currencies">Currencies</h1>
-          </div>
-      
-          <div class="span12">
-            <div class="large-copy">
-              <p>Enter multiple balances in different currencies and convert them all at once. In real time.</p>
-              <p>Open <a href="http://simplydo.com/currencies" target="new">Currencies</a> now.</p>
-              <p><span class="label label-success">Web</span> <span class="label label-info">tool</span> <span class="label label-info">open source</span> <span class="label label-info">exploration</span> <span class="label label-info">HTML 5</span> <span class="label label-info">CSS 3</span> <span class="label label-info">finance</span></p>
-            </div>
-          </div>    
-        </div>
-
-
-
-				
-				
-      
-		    <div class="row">
-		      <div class="span12 headline">
-	          <h1 id="contact" >Get in touch.</h1>
-	        </div>
-		      <div class="span6">
-	          <script type="text/javascript">var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));</script>
-
-	          <script type="text/javascript">
-	          var z7x3x5 = new WufooForm();
-	          z7x3x5.initialize({
-	          'userName':'simplydo', 
-	          'formHash':'z7x3x5', 
-	          'autoResize':true,
-	          'height':'497',
-	          'header':'hide'});
-	          z7x3x5.display();
-	          </script>
-          
-	        </div>
-	       <div class="span6">
-	         
-	       </div>
-         
-	      </div>
-      						
-	    </div>
-		</div>
-		<div id="footer">
-			<div class="container">
-			  <div class="row">
-					<div class="span6">
-            <p>© 2012 Simply Do, LLC. All Rights Reserved.</p>
-						<p><a href="#home" rel="smooth">Back to the top</a></p>
-					</div>
-					<div class="span6">
-						<ul class="unstyled">
-					  	<li>Background created with <a target="new"  href="http://photoshoptutorials.ws/photoshop-downloads/photoshop-brushes/watercolor-splatters-photoshop-brushes.html">Watercolor Splatters</a>.</li>
-							<li>Site bootstrapped with <a target="new" href="http://twitter.github.com/bootstrap/index.html">Twitter Bootstrap</a>.</li>
-							<li>Forms courtesy of <a href="http://wufoo.com" target="new">Wufoo</a>.</li>
-						</ul>
-					</div>
-			  </div>
-
-			</div>	
-		</div>	
-    
-    
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-1.7.1.min.js"></script>
-		<script src="bootstrap/js/bootstrap-dropdown.js"></script>
-		<script src="bootstrap/js/bootstrap-transition.js"></script>
-		<script src="bootstrap/js/bootstrap-carousel.js"></script>
-		
-		<script src="bootstrap/js/bootstrap-tooltip.js"></script>
-
-		
-		<!--
-		<script src="bootstrap/js/bootstrap-scrollspy.js"></script>
-    <script src="bootstrap/js/bootstrap-alert.js"></script>
-    <script src="bootstrap/js/bootstrap-modal.js"></script>
-    <script src="bootstrap/js/bootstrap-tab.js"></script>
-    <script src="bootstrap/js/bootstrap-popover.js"></script>
-    <script src="bootstrap/js/bootstrap-button.js"></script>
-    
-    <script src="bootstrap/js/bootstrap-typeahead.js"></script>
-		-->
-	
     <script>
-    // smoth scrolling from the static navbar
-    
-      $(document).ready(function() {
+  // Include the UserVoice JavaScript SDK (only needed once on a page)
+  UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/24oEv58YxGW9DZwh3xuCg.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
 
-        // Click event for any anchor tag that's href starts with #
-        $('a[rel="smooth"]').click(function(event) {
+  //
+  // UserVoice Javascript SDK developer documentation:
+  // https://www.uservoice.com/o/javascript-sdk
+  //
 
-            // The id of the section we want to go to.
-            var id = $(this).attr("href");
+  // Set colors
+  UserVoice.push(['set', {
+    accent_color: '#448dd6',
+    trigger_color: 'white',
+    trigger_background_color: '#448dd6'
+  }]);
 
-            // An offset to push the content down from the top.
-            var offset = 50;
+  // Identify the user and pass traits
+  // To enable, replace sample data with actual user traits and uncomment the line
+  UserVoice.push(['identify', {
+    //email:      'john.doe@example.com', // User’s email address
+    //name:       'John Doe', // User’s real name
+    //created_at: 1364406966, // Unix timestamp for the date the user signed up
+    //id:         123, // Optional: Unique id of the user (if set, this should not change)
+    //type:       'Owner', // Optional: segment your users by type
+    //account: {
+    //  id:           123, // Optional: associate multiple users with a single account
+    //  name:         'Acme, Co.', // Account name
+    //  created_at:   1364406966, // Unix timestamp for the date the account was created
+    //  monthly_rate: 9.99, // Decimal; monthly rate of the account
+    //  ltv:          1495.00, // Decimal; lifetime value of the account
+    //  plan:         'Enhanced' // Plan name for the account
+    //}
+  }]);
 
-            // Our scroll target : the top position of the
-            // section that has the id referenced by our href.
-            var target = $(id).offset().top - offset;
+  // Add default trigger to the bottom-right corner of the window:
+  UserVoice.push(['addTrigger', { mode: 'contact', trigger_position: 'bottom-right' }]);
 
-            // The magic...smooth scrollin' goodness.
-            $('html, body').animate({scrollTop:target}, 500);
+  // Or, use your own custom trigger:
+  //UserVoice.push(['addTrigger', '#id', { mode: 'contact' }]);
 
-            //prevent the page from jumping down to our section.
-            event.preventDefault();
-        });
+  // Autoprompt for Satisfaction and SmartVote (only displayed under certain conditions)
+  UserVoice.push(['autoprompt', {}]);
+  </script>
 
-      });
-    </script>
-    
-    <script type="text/javascript">
-    // various twitter boot strap initializers
-      $('a[rel=tooltip]').tooltip({
-        placement:'bottom'
-      });
+
       
-    </script>
-    
-  </body>
+</body>
 </html>
